@@ -12,7 +12,7 @@ const Products = () => {
           alt="Laptop"
           title="Laptop"
           description="This is a laptop for sale"
-          
+          delay={0}
         />
         <Product
           src="https://picsum.photos/id/21/300/200"
