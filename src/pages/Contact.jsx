@@ -16,7 +16,8 @@ const Contact = () => {
         tempore quibusdam aperiam sed aut minus nulla quisquam ex nihil.
         Molestiae neque reprehenderit cumque laudantium quo!
       </Body>
-      <div
+      <motion.div className='slide'
+      initial={{y: '-100%'}} animate={{y: '100%'}} transition={{duration: 2, ease: [0.2, 1, 0.2, 1]}}
       />
       <div className="circle"
       />
