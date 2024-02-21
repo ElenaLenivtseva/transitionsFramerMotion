@@ -19,7 +19,11 @@ const Contact = () => {
       <motion.div className='slide'
       initial={{y: '-100%'}} animate={{y: '100%'}} transition={{duration: 2, ease: [0.2, 1, 0.2, 1]}}
       />
-      <div className="circle"
+      <motion.div 
+      animate={{height: 0, width: 0, borderRadius: "100%"}}
+      exit={{height: '100%', width: '100%', borderRadius: 0}}
+      transition={{duration: 0.5, ease: 'easeInOut'}}
+      className="circle"
       />
     </div>
   );
