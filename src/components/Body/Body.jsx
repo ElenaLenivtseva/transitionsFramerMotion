@@ -5,11 +5,11 @@ import "./Body.css";
 export const Body = ({ children, delay = 0 }) => {
   return (
     <div className="body-container">
-      <p
+      <motion.p initial={{x: '100%'}} animate={{x: 0}} exit={{x: '-100%'}} transition={{duration: 0.5, delay}}
         
       >
         {children}
-      </p>
+      </motion.p>
     </div>
   );
 };
